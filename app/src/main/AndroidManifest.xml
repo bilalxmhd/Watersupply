@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.watersupply">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/supplier"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/supplier"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WaterSupply"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".MyOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".Services.LocationUploadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ViewFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPaymentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PredictionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupplierProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SupplierActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SupplierHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SupplierRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupplierLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

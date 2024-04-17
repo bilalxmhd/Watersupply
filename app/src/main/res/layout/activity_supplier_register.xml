@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupplierRegisterActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supplier Registration"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/sNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_border"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/sAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_border"
+        android:hint="Address"/>
+
+    <EditText
+        android:id="@+id/sNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/sEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_border"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/sPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_border"
+        android:hint="Password"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/idProofButton"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:text="Id proof"
+            android:backgroundTint="@color/blue"
+            android:drawableRight="@drawable/ic_upload"/>
+
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/sRegisterButton"
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:text="Register"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

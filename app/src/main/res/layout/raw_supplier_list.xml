@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    android:paddingTop="17dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardMaxElevation="20dp"
+        app:contentPaddingLeft="8dp"
+        app:contentPaddingRight="8dp"
+        app:cardBackgroundColor="@color/lblue"
+        app:contentPaddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/waterjar"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/bookDetailsLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/snameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Anandu" />
+
+                    <RatingBar
+                        android:id="@+id/supplierRatingBar"
+                        style="?ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:progressTint="#fc631c"
+                        android:progressBackgroundTint="#000"
+                        android:backgroundTint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/saddressTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Address"/>
+                    <TextView
+                        android:id="@+id/snumberTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Number"/>
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="5dp"
+                             android:layout_gravity="center|end">
+
+                             <ImageView
+                                 android:id="@+id/callImageView"
+                                 android:layout_width="40dp"
+                                 android:layout_height="40dp"
+                                 android:src="@drawable/call_icon" />
+
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:text="Enquiry"
+                                 android:textSize="18dp"
+                                 android:textColor="@color/red"
+                                 android:layout_marginLeft="16dp"
+                                 android:layout_marginTop="5dp"/>
+                         </LinearLayout>
+
+                        <Button
+                            android:id="@+id/bookButton"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:text="Book now"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center|end"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
